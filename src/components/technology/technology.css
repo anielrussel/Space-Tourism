@@ -1,0 +1,278 @@
+.technology-desktop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.technology-hero-image-tablet {
+    display: none;
+}
+.technology-hero-image-tablet img {
+    width: 100%;
+}
+
+.technology-tablet,
+.technology-mobile {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    display: none;
+}
+
+.technology-text span {
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    font-weight: 700;
+    color: white;
+}
+
+.technology-text h1 {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 4.725px;
+    color: white;
+    padding: 10rem 0 0 10rem;
+    font-family: var(--font-family1);
+}
+
+.technology-hero {
+    display: flex;
+    align-items: center;
+}
+
+.technology-hero-text {
+    display: flex;
+    gap: 5rem;
+    align-items: flex-end;
+    padding: 0 10rem 0 8rem;
+}
+
+.technology-hero-text-number {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: var(--font-family2);
+}
+
+.technology-hero-text-number h1 {
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    padding: 1rem 1.8rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.technology-hero-text-number h1:hover {
+    font-weight: 400;
+    font-size: 32px;
+    color: #0B0D17 !important;
+    padding: 1rem 1.8rem;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #0B0D17;
+}
+
+.tech-active {
+    font-weight: 400;
+    font-size: 32px;
+    color: #0B0D17 !important;
+    padding: 1rem 1.8rem;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #0B0D17;
+}
+
+.technology-hero-text-details h2 {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+    padding-bottom: 1rem;
+    font-family: var(--font-family1);
+}
+
+.technology-hero-text-details h1 {
+    font-weight: 400;
+    font-size: 56px;
+    color: white;
+    padding-bottom: 2rem;
+    font-family: var(--font-family2);
+}
+
+.technology-hero-text-details p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+    font-family: var(--font-family1);
+}
+
+@media screen and (max-width: 1440px) {
+    .technology-desktop {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .technology-desktop {
+        display: none;
+    }
+
+    .technology-tablet {
+        display: block;
+    }
+
+    .technology-hero {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .technology-hero-text {
+        padding: 5rem 1rem 0 8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .technology-hero-image-desktop {
+        display: none;
+    }
+
+    .technology-hero-image-tablet {
+        display: block;
+    }
+
+    .technology-text h1 {
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 3.375px;
+        padding: 10rem 0 0 5rem;
+    }
+
+    .technology-hero {
+        flex-direction: column-reverse;
+    }
+
+    .technology-hero-image {
+        padding-top: 60px;
+    }
+
+    .technology-hero-text {
+        padding: 2rem 0 0 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .technology-hero-text-number {
+        flex-direction: row;
+    }
+
+    .technology-hero-text-number h1 {
+        font-size: 24px;
+        padding: 1rem 1.6rem;
+    }
+
+    .technology-hero-text-number h1:hover {
+        font-size: 24px;
+        padding: 1rem 1.6rem;
+    }
+
+    .tech-active {
+        font-size: 24px;
+        padding: 1rem 1.6rem;
+    }
+
+    .technology-hero-text-details h2 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .technology-hero-text-details h1 {
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    .technology-hero-text-details p {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 0 155px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .technology-tablet {
+        display: none;
+    }
+    .technology-mobile {
+        display: block;
+    }
+    .technology-hero-image-tablet {
+        display: block;
+    }
+
+    .technology-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .technology-hero-image {
+        padding-top: 32px;
+    }
+
+    .technology-hero-text {
+        padding: 1rem 0 0 0;
+    }
+    
+    .technology-text h1 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        padding: 8rem 0 0 0
+    }
+    .technology-hero-text-number h1 {
+        font-size: 16px;
+        padding: 1rem 1.4rem;
+    }
+
+    .technology-hero-text-number h1:hover {
+        font-size: 15px;
+        padding: 1rem 1.4rem;
+    }
+
+    .tech-active {
+        font-size: 16px;
+        padding: 1rem 1.4rem;
+    }
+    .technology-hero-text-details h2 {
+        font-size: 14px;
+        letter-spacing: 2.3625px;
+    }
+    .technology-hero-text-details h1 {
+        font-size: 24px;
+    }
+    .technology-hero-text-details p {
+        font-size: 15px;
+        padding: 0 24px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .technology-hero-text {
+        padding: 1rem 0 0 0;
+        gap: 1rem;
+    }
+    .technology-hero-text-details h1 {
+        padding-bottom: 1rem;
+    }
+    .technology-hero-text-details p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+}

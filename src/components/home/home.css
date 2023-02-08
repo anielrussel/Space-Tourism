@@ -1,0 +1,143 @@
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.desktop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+.tablet,
+.mobile  {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    display: none;
+}
+.home-text {
+    padding: 22rem 0 0 10rem;
+    width: 50%;
+}
+.home-text h2 {
+    color: #D0D6F9;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 4.725px;
+    font-family: var(--font-family1);
+}
+.home-text h1 {
+    color: white;
+    font-size: 150px;
+    font-weight: 400;
+    font-family: var(--font-family2);
+}
+.home-text p {
+    color: #D0D6F9;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2rem;
+    padding-top: 2rem;
+    font-family: var(--font-family1);
+}
+.home-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20rem 15rem 0 0;
+    background-color: white;
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+}
+.home-circle h1 {
+    font-family: var(--font-family2);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #0B0D17;
+    font-weight: 400;
+}
+@media screen and (max-width: 2560px) {
+    .desktop {
+        height: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .desktop {
+        height: 100%;
+    }
+    .home-circle {
+        margin: 20rem 0 0 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+    }
+    .home-text {
+        text-align: center;
+        padding: 10rem 5rem 0 5rem;
+        width: 100%;
+    }
+    .home-text h2 {
+        letter-spacing: normal;
+    }
+    .home-text p {
+        padding-top: 0;
+    }
+    .home-circle {
+        width: 224px;
+        height: 224px;
+        margin: 10rem 0 0 0;
+    }
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+}
+@media screen and (max-width: 425px) {
+    .tablet {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .home-text {
+        padding: 10rem 1rem 0 1rem;
+    }
+    .home-text h2 {
+        font-size: 16px;
+    }
+    .home-text h1 {
+        font-size: 90px;
+    }
+    .home-text p {
+        font-size: 16px;
+        line-height: normal;
+        padding-top: 1rem;
+    }
+    .home-circle {
+        margin: 5rem 0;
+    }
+}
+@media screen and (max-width: 375px) {
+    .mobile {
+        height: 100%;
+    }
+    .home-circle {
+        width: 200px;
+        height: 200px;
+        margin: 2rem 0 0 0;
+    }
+    .home-circle h1 {
+        font-size: 20px;
+    }
+}
+

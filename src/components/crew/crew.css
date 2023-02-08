@@ -1,0 +1,239 @@
+.crew-desktop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.crew-tablet,
+.crew-mobile {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    display: none;
+}
+
+.crew-text span {
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    font-weight: 700;
+    color: white;
+}
+
+.crew-text h1 {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 4.725px;
+    color: white;
+    padding: 10rem 0 0 10rem;
+    font-family: var(--font-family1);
+}
+
+.crew-slider {
+    position: relative;
+}
+
+.crew-slider-details {
+    display: flex;
+    padding: 0 10rem;
+    cursor: grab;
+}
+
+.crew-slider-details-text {
+    padding-top: 8rem;
+}
+
+.crew-slider-details-text h2 {
+    font-weight: 400;
+    font-size: 32px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    text-transform: uppercase;
+    color: white;
+    font-family: var(--font-family2);
+}
+
+.crew-slider-details-text h1 {
+    font-weight: 400;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 15px;
+    font-family: var(--font-family2);
+}
+
+.crew-slider-details-text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+    padding-top: 27px;
+    padding-right: 22rem;
+    font-family: var(--font-family1);
+}
+
+.crew-slider-details-image {
+    border-bottom: 1px solid #999999;
+}
+
+.crew-slider-pagination {
+    position: absolute;
+    padding: 0 0 10rem 10rem;
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background: #999999 !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: white !important;
+}
+
+@media screen and (max-width: 1440px) {
+    .crew-desktop {
+        height: 100%;
+    }
+
+    .crew-slider-details-text p {
+        padding-right: 10rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .crew-desktop {
+        display: none;
+    }
+
+    .crew-tablet {
+        display: block;
+    }
+
+    .crew-slider-details-text p {
+        padding-right: 0;
+    }
+
+    .crew-slider-details-image img {
+        width: 400px;
+    }
+
+    .crew-slider-pagination {
+        padding: 5rem 0 0 10rem;
+    }
+
+    .crew-slider-details {
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .crew-text h1 {
+        font-size: 20px;
+        letter-spacing: 3.375px;
+        padding: 10rem 0 0 5rem;
+    }
+
+    .crew-slider-details {
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .crew-slider-details-text {
+        padding-top: 5rem;
+    }
+
+    .crew-slider-details-text h2 {
+        font-size: 24px;
+    }
+
+    .crew-slider-details-text h1 {
+        font-size: 40px;
+    }
+
+    .crew-slider-details-text p {
+        font-size: 16px;
+        padding: 16px 155px 0 155px;
+    }
+
+    .crew-slider-pagination {
+        padding: 0 0 30rem 22rem;
+    }
+
+    .crew-slider-details-image {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 5rem;
+        border-bottom: 1px solid #999999;
+    }
+
+    .crew-slider-details-image img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .crew-tablet {
+        display: none;
+    }
+
+    .crew-mobile {
+        display: block;
+    }
+
+    .crew-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crew-text h1 {
+        padding: 8rem 0 0 0;
+        font-size: 16px;
+    }
+
+    .crew-slider-details {
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+
+    .crew-slider-details-image {
+        width: 90%;
+        text-align: end;
+        padding-top: 2rem;
+    }
+
+    .crew-slider-details-image img {
+        width: 150px;
+        height: 222px;
+    }
+
+    .crew-slider-pagination {
+        padding: 0 0 15rem 11rem;
+    }
+
+    .crew-slider-details-text h2 {
+        font-size: 16px;
+    }
+
+    .crew-slider-details-text h1 {
+        font-size: 24px;
+    }
+
+    .crew-slider-details-text p {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 16px 24px 0 24px;
+    }
+
+}
